@@ -1,0 +1,18 @@
+authors:
+  Raju Rimal:
+    href: http://mathatistics.com
+  Solve Sæbø:
+    href: http://solvsa.nmbu.no
+navbar:
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/simulatr/simrel2
+    - icon: fa-globe fa-lg
+      href: https://simulatr.github.io/simrel2
+template:
+  params:
+    bootswatch: yeti
+figures:
+  dev: grDevices::svg
+  fig.ext: svg
+  fig.retina: 2

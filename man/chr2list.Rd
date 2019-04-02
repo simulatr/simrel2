@@ -4,11 +4,11 @@
 \alias{chr2list}
 \title{Parse a character string to a list}
 \usage{
-chr2list(chr)
+chr2list(chr = NULL)
 }
 \arguments{
 \item{chr}{A character string that represents a list or a vector
-see Notes for details.}
+The default is null. See notes for details.}
 }
 \value{
 A list or a vector

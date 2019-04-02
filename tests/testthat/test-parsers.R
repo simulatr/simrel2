@@ -6,6 +6,7 @@ context("Testing all the parser functions.")
 
 testthat::test_that(
   "Test char2list", {
+    expect_null(chr2list())
     expect_equal(chr2list("1, 2, 3"), c(1, 2, 3))
     expect_equal(chr2list("1, 2; 3, 4"), list(c(1, 2), c(3, 4)))
     expect_equal(chr2list("1:2; 3:7"), list(1:2, 3:7))
@@ -15,8 +16,10 @@ testthat::test_that(
 
 testthat::test_that(
   "Test list2chr", {
+    expect_null(list2chr())
     expect_equal(list2chr(c(1, 2, 3)), "1; 2; 3")
     expect_equal(list2chr(list(c(1, 2), c(3, 4))), "1, 2; 3, 4")
     expect_equal(list2chr(list(1:2, 3:7)), "1, 2; 3, 4, 5, 6, 7")
+    expect_error(list2chr(list(1:2, list(2:3, 4:5))))
   }
 )

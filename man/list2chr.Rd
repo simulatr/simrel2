@@ -4,10 +4,11 @@
 \alias{list2chr}
 \title{Parse List/Vector to a character string}
 \usage{
-list2chr(list)
+list2chr(list = NULL)
 }
 \arguments{
-\item{list}{A list or a vector which need to be deparsed as a string}
+\item{list}{A list or a vector which need to be deparsed as a string
+The default is NULL and it will return NULL}
 }
 \value{
 A character string representing the list

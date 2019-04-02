@@ -1,0 +1,13 @@
+^codecov\.yml$
+^_pkgdown\.yml$
+^.*\.Rproj$
+^\.Rproj\.user$
+README.rmd
+README.md
+figure
+figure/*
+^docs$
+.travis.yml
+.github
+CONTRIBUTING.md
+.Rapp*
